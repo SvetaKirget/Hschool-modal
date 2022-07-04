@@ -7,13 +7,13 @@
   src: local(""), url("../fonts/Montserrat-Italic.ttf") format("truetype");
 }
 
-$color-white1: #ffffff;
-$color-blue1: #001a49;
+$color-white: #ffffff;
+$color-blue: #001a49;
 $color-totalblack: #000000;
 $color-white2: #f6f6f6;
 $color-white3: #e8e8e8;
-$color-blue2: #8589e4;
-$color-blue3: #4945f9;
+$color-light-blue: #8589e4;
+$color-medium-blue: #4945f9;
 
 %form {
   background: $color-white2;
@@ -22,10 +22,16 @@ $color-blue3: #4945f9;
   width: 300px;
   height: 32px;
   margin-bottom: 22px;
-  padding: 0px 0px 0px 10px;
+  padding-left: 10px;
 }
 
-.mainBlock {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+.main-Block {
   width: 360px;
   height: 529px;
   background-color: rgba(101, 107, 241, 0.22);
@@ -40,7 +46,7 @@ $color-blue3: #4945f9;
   height: 38px;
   font-family: "Mulish";
   font-size: 30px;
-  color: $color-blue1;
+  color: $color-blue;
   margin: auto;
   padding-bottom: 15px;
 }
@@ -51,25 +57,16 @@ $color-blue3: #4945f9;
   margin: 22px 26px 22px 26px;
 }
 
-.name {
-  @extend %form;
-}
-
-.email {
-  @extend %form;
-}
-
-.password {
-  @extend %form;
-}
-
+.name,
+.email,
+.password,
 .confirmPas {
   @extend %form;
 }
 
 .btn {
-  background: $color-blue2;
-  border: 1px solid $color-blue3;
+  background: $color-light-blue;
+  border: 1px solid $color-medium-blue;
   border-radius: 8px;
   height: 37px;
   width: 307px;
@@ -81,7 +78,7 @@ $color-blue3: #4945f9;
     font-family: "Inter";
     font-size: 16px;
     line-height: 19px;
-    color: $color-white1;
+    color: $color-white;
     margin: auto;
   }
 }
