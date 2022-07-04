@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Mulish";
+  src: local(""), url("../fonts/Mulish-Black.ttf") format("truetype");
+  font-family: "Inter";
+  src: local(""), url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-family: Montserrat;
+  src: local(""), url("../fonts/Montserrat-Italic.ttf") format("truetype");
+}
+
+$color-white1: #ffffff;
+$color-blue1: #001a49;
+$color-totalblack: #000000;
+$color-white2: #f6f6f6;
+$color-white3: #e8e8e8;
+$color-blue2: #8589e4;
+$color-blue3: #4945f9;
+
+%form {
+  background: $color-white2;
+  border: 1px solid $color-white3;
+  border-radius: 8px;
+  width: 300px;
+  height: 32px;
+  margin-bottom: 22px;
+  padding: 0px 0px 0px 10px;
+}
+
+.mainBlock {
+  width: 360px;
+  height: 529px;
+  background-color: rgba(101, 107, 241, 0.22);
+  box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.22);
+  border-radius: 30px;
+  margin: 30px auto;
+  padding-top: 40px;
+}
+
+.school {
+  width: 124px;
+  height: 38px;
+  font-family: "Mulish";
+  font-size: 30px;
+  color: $color-blue1;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 22px 26px 22px 26px;
+}
+
+.name {
+  @extend %form;
+}
+
+.email {
+  @extend %form;
+}
+
+.password {
+  @extend %form;
+}
+
+.confirmPas {
+  @extend %form;
+}
+
+.btn {
+  background: $color-blue2;
+  border: 1px solid $color-blue3;
+  border-radius: 8px;
+  height: 37px;
+  width: 307px;
+  margin: 0px 20px 20px 28px;
+
+  p {
+    width: 120px;
+    height: 19px;
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-white1;
+    margin: auto;
+  }
+}
+
+.text {
+  margin: auto;
+  width: 280px;
+  height: 19px;
+  font-family: "Montserrat";
+  font-size: 12px;
+  color: $color-totalblack;
+}
