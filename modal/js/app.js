@@ -8,7 +8,7 @@ const checkName = (val) => {
 
 const checkEmail = (param) => {
   if (param.length === 0) throw new Error("Введите мэйл!");
-  if (!/^[a-z0-9.-_]+@[a-z]+\.[a-z]{2,6}$/g.test(param))
+  if (!/^[a-zA-Z0-9\.\-\_]+@[a-z]+\.[a-z]{2,6}$/g.test(param))
     throw new Error(`Введите корректный адрес почты`);
   return true;
 };
